@@ -201,35 +201,24 @@ button .navbar-toggler-icon {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin: 40px;
   padding: 10px;
   border-radius: 10px; }
+  .main-productos section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px; }
 
-#congelados {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; }
-
-#congelados .verduras {
-  display: flex;
-  flex-direction: column; }
-
-.verduras div {
-  display: flex;
-  flex-direction: row; }
-
-#congelados .frutas {
-  display: flex;
-  flex-direction: column; }
-
-.frutas div {
-  display: flex;
-  flex-direction: row; }
+.main-productos ul {
+  list-style-type: square; }
+  .main-productos ul li {
+    font-size: 30px; }
 
 .main-productos img {
-  width: 300px;
+  width: 400px;
   border-radius: 10px; }
 
 .main-productos__section--sales {
@@ -241,10 +230,9 @@ button .navbar-toggler-icon {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap; }
-
-.img-sales img {
-  width: 150px;
-  margin: 20px; }
+  .img-sales img {
+    width: 150px;
+    margin: 20px; }
 
 .main-ofertas img {
   width: 400px;

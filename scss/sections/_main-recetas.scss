@@ -1,11 +1,11 @@
-.main-recetas section{
-    margin: 30px;
-    border-radius: 10px;
-    margin:10px;
-
-}
-.main-recetas img{
-    width:400px;
+.main-recetas {
+    section{
+        margin: 30px;
+    }
+    img{
+        width:500px;
+        border-radius: 10px;
+    }
 }
 
 .receta1, .receta2{
@@ -13,24 +13,22 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-
-}
-.receta1 div, .receta2 div{
-    margin:20px;
-    display: flex;
-    flex-direction: column;
+    align-items:flex-start;
+    div{
+        margin:20px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .video-recetas{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: 30px;
+    justify-content: center;
+     iframe{
+        width:400px;
+    }
 }
 
-.video-recetas iframe{
-    margin:20px;
-    width:300px;
-}
+

@@ -16,7 +16,6 @@ h2{
 h3{
     color:$white;
     text-decoration: none;
-    text-align: center;
 }
 h4{text-align: center;}
 
@@ -39,7 +38,7 @@ main{ grid-area:main;}
 }
 .flecha-arriba {
     a{  color:$white;
-        font-size: 3rem;
-        margin: 20px;}
+        font-size: 2rem;
+        margin-right: 20px;}
     li{  list-style-type: none;}
 }

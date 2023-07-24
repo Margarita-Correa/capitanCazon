@@ -112,7 +112,7 @@ button .navbar-toggler-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../recursos/productos/salmon2.jpg);
+  background-image: url(../../recursos/productos/salmon2.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -120,7 +120,7 @@ button .navbar-toggler-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../recursos/productos/tubosDeCalamar.jpg);
+  background-image: url(../../recursos/productos/tubosDeCalamar.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -128,7 +128,7 @@ button .navbar-toggler-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../recursos/imgs/langostinos.jpg);
+  background-image: url(../../recursos/imgs/langostinos.jpg);
   background-size: cover;
   background-position: center; }
 

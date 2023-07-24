@@ -1,0 +1,45 @@
+.main-contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main-contacto div{
+    width:50%;
+}
+#foto-contacto{
+    width:100%;
+}
+
+form{
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   align-items: stretch;
+   flex-direction: column;
+   margin:5px;
+}
+
+input{
+    width: 60%;
+    padding:10px;
+    margin:10px;
+    border-radius: 5px ;
+}
+textarea{
+padding:10px;
+margin:10px;
+border-radius: 5px;
+width:60%;
+height: 90px;
+}
+
+//media queries
+@media (max-width:1200px){
+    .main-contacto{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+}

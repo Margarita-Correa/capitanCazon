@@ -1,0 +1,34 @@
+body{
+    background-color: $colorback;
+    overflow:auto;
+ }
+ h1{
+    font-size: 60px;
+    color: $black;
+    text-align: center;
+    padding: 20px;
+}
+h2{
+    font-size: 40px;
+    color: $black;
+    text-align: center;
+}
+h3{
+    color:$white;
+    text-decoration: none;
+    text-align: center;
+}
+h4{text-align: center;}
+
+h5{color: $black;}
+
+.grilla{
+    display:grid;
+    grid-template-rows: 0.5fr 5fr 0.5fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    height: 100vh;
+}
+main{ grid-area:main;}

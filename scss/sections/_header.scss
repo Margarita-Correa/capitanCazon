@@ -1,0 +1,28 @@
+.header { grid-area: header;}
+
+/* estilos: barra de navegacion (pisando bootstrap tuve que usar 3 important)*/
+#logo{
+    width:100px;
+}
+.nav-link{
+    color: white !important;
+    font-size: 25px;
+}
+nav a:hover{
+    color:#ebd141 !important;
+}
+.bg-body-tertiary{
+    background-color:#000 !important;
+}
+
+.container-fluid{
+    flex-direction: row;
+}
+button .navbar-toggler-icon{
+    background-color:#ffffff;
+    padding: 25px;
+}
+
+#navbarSupportedContent ul{
+    margin: auto;
+}

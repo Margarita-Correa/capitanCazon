@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+* {
+  font-family: 'Koulen', cursive;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #A1C2F1;
+  overflow: auto; }
+
+h1 {
+  font-size: 60px;
+  color: #000;
+  text-align: center;
+  padding: 20px; }
+
+h2 {
+  font-size: 40px;
+  color: #000;
+  text-align: center; }
+
+h3 {
+  color: #fff;
+  text-decoration: none;
+  text-align: center; }
+
+h4 {
+  text-align: center; }
+
+h5 {
+  color: #000; }
+
+.grilla {
+  display: grid;
+  grid-template-rows: 0.5fr 5fr 0.5fr;
+  grid-template-areas: "header" "main" "footer";
+  height: 100vh; }
+
+main {
+  grid-area: main; }
+
+.header {
+  grid-area: header; }
+
+/* estilos: barra de navegacion (pisando bootstrap tuve que usar 3 important)*/
+#logo {
+  width: 100px; }
+
+.nav-link {
+  color: white !important;
+  font-size: 25px; }
+
+nav a:hover {
+  color: #ebd141 !important; }
+
+.bg-body-tertiary {
+  background-color: #000 !important; }
+
+.container-fluid {
+  flex-direction: row; }
+
+button .navbar-toggler-icon {
+  background-color: #ffffff;
+  padding: 25px; }
+
+#navbarSupportedContent ul {
+  margin: auto; }
+
+#carouselExampleCaptions {
+  width: 100%; }
+
+.cuadro-1 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #000; }
+
+.cuadro-1 a {
+  text-decoration: none;
+  color: #ebd141;
+  text-shadow: 3px 3px 3px #000, 3px 3px 3px #000;
+  font-size: 50px;
+  padding: 0 50px 0  50px; }
+
+.cuadro-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px; }
+
+.cuadro-2 div {
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px; }
+
+#productos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/recursos/productos/salmon2.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#ofertas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/recursos/productos/tubosDeCalamar.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#recetas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/recursos/imgs/langostinos.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.cuadro-2 a {
+  text-decoration: none;
+  color: #ebd141;
+  font-size: 50px;
+  text-shadow: 3px 3px 3px #000, 3px 3px 3px #000;
+  text-align: center; }
+
+@media (max-width: 425px) {
+  .cuadro-2 div {
+    width: 300px; } }
+
+.main-nosotros span {
+  font-weight: bold; }
+
+.main-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center; }
+
+.presentacion {
+  background-color: #000; }
+
+.presentacion video {
+  width: 70%; }
+
+.main-nosotros div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.main-nosotros p {
+  width: 600px;
+  margin: 20px;
+  text-align: justify;
+  font-size: 30px;
+  border-radius: 10px; }
+
+.main-nosotros img {
+  margin: 10px;
+  width: 300px;
+  border-radius: 5px; }
+
+@media (max-width: 1200px) {
+  .main-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .main-nosotros div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main-nosotros p {
+    width: 400px;
+    font-size: 20px; } }
+
+@media (max-width: 425px) {
+  .main-nosotros p {
+    width: 300px;
+    margin: 5px; } }
+
+.main-productos section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 40px;
+  padding: 10px;
+  background-color: #7895CB;
+  border-radius: 10px; }
+
+#congelados {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+#congelados .verduras {
+  display: flex;
+  flex-direction: column; }
+
+.verduras div {
+  display: flex;
+  flex-direction: row; }
+
+#congelados .frutas {
+  display: flex;
+  flex-direction: column; }
+
+.frutas div {
+  display: flex;
+  flex-direction: row; }
+
+.main-productos img {
+  width: 300px;
+  border-radius: 10px; }
+
+.main-productos__section--sales {
+  display: flex;
+  flex-direction: column; }
+
+.img-sales {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.img-sales img {
+  width: 150px;
+  margin: 20px; }
+
+.main-ofertas img {
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px; }
+
+.main-ofertas section {
+  background-color: #7895CB;
+  margin: 30px;
+  border-radius: 10px; }
+
+.main-ofertas__section--promosmix {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.section__div--promosmix {
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+
+.tipos-de-promo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start; }
+  .tipos-de-promo div {
+    margin: 15px; }
+
+.main-recetas section {
+  background-color: #7895CB;
+  margin: 30px;
+  border-radius: 10px;
+  margin: 10px; }
+
+.main-recetas img {
+  width: 400px; }
+
+.receta1, .receta2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.receta1 div, .receta2 div {
+  margin: 20px;
+  display: flex;
+  flex-direction: column; }
+
+.video-recetas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 30px; }
+
+.video-recetas iframe {
+  margin: 20px;
+  width: 300px; }
+
+.main-contacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.main-contacto div {
+  width: 50%; }
+
+#foto-contacto {
+  width: 100%; }
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  margin: 5px; }
+
+input {
+  width: 60%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px; }
+
+textarea {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 60%;
+  height: 90px; }
+
+@media (max-width: 1200px) {
+  .main-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center; } }
+
+.footer {
+  grid-area: footer;
+  background-color: #000000; }
+
+.footer img {
+  width: 80px; }
+
+.redes {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.redes li {
+  margin: 10px; }
+
+.redes a {
+  color: #ffffff;
+  font-size: 1.5rem; }
+
+.footer__barra-contacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  margin: 0px 30px; }
+
+.footer__barra-contacto ul {
+  margin-bottom: 0;
+  padding-left: 0; }
+
+.footer a {
+  text-align: center; }
+
+@media (max-width: 425px) {
+  .footer__barra-contacto {
+    display: flex;
+    flex-direction: column; }
+  .footer img {
+    width: 70px; } }

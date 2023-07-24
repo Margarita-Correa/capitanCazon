@@ -32,3 +32,14 @@ h5{color: $black;}
     height: 100vh;
 }
 main{ grid-area:main;}
+
+.flecha-arriba{
+    display: flex;
+    justify-content:flex-end ;
+}
+.flecha-arriba {
+    a{  color:$white;
+        font-size: 3rem;
+        margin: 20px;}
+    li{  list-style-type: none;}
+}

@@ -6,7 +6,7 @@
   margin: 0; }
 
 body {
-  background-color: #A1C2F1;
+  background-color: #719ae6;
   overflow: auto; }
 
 h1 {
@@ -39,6 +39,18 @@ h5 {
 
 main {
   grid-area: main; }
+
+.flecha-arriba {
+  display: flex;
+  justify-content: flex-end; }
+
+.flecha-arriba a {
+  color: #fff;
+  font-size: 3rem;
+  margin: 20px; }
+
+.flecha-arriba li {
+  list-style-type: none; }
 
 .header {
   grid-area: header; }
@@ -194,7 +206,6 @@ button .navbar-toggler-icon {
   align-items: center;
   margin: 40px;
   padding: 10px;
-  background-color: #7895CB;
   border-radius: 10px; }
 
 #congelados {
@@ -237,20 +248,32 @@ button .navbar-toggler-icon {
   margin: 20px; }
 
 .main-ofertas img {
-  width: 300px;
+  width: 400px;
   margin: 10px;
   border-radius: 10px; }
 
 .main-ofertas section {
-  background-color: #7895CB;
   margin: 30px;
   border-radius: 10px; }
+
+.main-ofertas #promos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px; }
+
+.main-ofertas #nuevo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .main-ofertas__section--promosmix {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: center; }
 
 .section__div--promosmix {
   display: flex;
@@ -267,7 +290,6 @@ button .navbar-toggler-icon {
     margin: 15px; }
 
 .main-recetas section {
-  background-color: #7895CB;
   margin: 30px;
   border-radius: 10px;
   margin: 10px; }

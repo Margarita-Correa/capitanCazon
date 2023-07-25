@@ -41,5 +41,9 @@
         width: 150px;
         margin: 20px;
     }
+    img:hover{
+        transform: scale(2);
+        border: 2px inset $black;
+    }
 }
 

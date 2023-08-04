@@ -5,45 +5,90 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin:40px;
-        padding: 10px;
-        border-radius: 10px;
-         div{
+        margin:5px;
+        padding: 5px;
+        div{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: center;
-            margin: 40px;
+            padding-top: 20px;
+            margin: 10px;
         }
-    }
-   
-    ul{
-        list-style-type:square;
         li{
             font-size: 30px;
+            list-style-type: none;
         }
     }
-    img{
-        width:400px;
-        border-radius: 10px;
+    .main-productos__section--sales{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
+    .img-sales{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    
+        img{
+            width: 150px;
+            margin: 20px;
+        }
+        img:hover{
+            transform: scale(2);
+            border: 2px inset $black;
+        }
+    }
+}
+img{
+    border-radius: 10px;
 }
 
-.main-productos__section--sales{
-    display: flex;
-    flex-direction: column;
+#mariscos img, #rebozados img{
+    width:600px;
 }
-.img-sales{
-    display:flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    img{
-        width: 150px;
-        margin: 20px;
-    }
-    img:hover{
-        transform: scale(2);
-        border: 2px inset $black;
-    }
+#pescados img,.verduras img, .frutas img{
+    width: 400px;
 }
 
+
+@media (max-width:1500px){
+    .main-productos section{
+            div{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                padding-left: 20px;
+            }
+            li{
+                font-size: 30px;
+                list-style-type: none;
+            }
+            .main-productos__section--sales{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            .img-sales{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                flex-direction: row;
+            
+                img{
+                    width: 150px;
+                    margin: 20px;
+                }
+            }
+    }
+}
+@media (max-width:800px){
+    #mariscos img, #rebozados img{
+        width:80%;
+    }
+    #pescados img,.verduras img, .frutas img{
+        width: 80%;
+    }
+}

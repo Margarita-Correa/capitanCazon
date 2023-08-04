@@ -42,24 +42,23 @@ main {
 .flecha-arriba {
   display: flex;
   justify-content: flex-end; }
-
-.flecha-arriba a {
-  color: #fff;
-  font-size: 2rem;
-  margin-right: 20px; }
-
-.flecha-arriba li {
-  list-style-type: none; }
+  .flecha-arriba a {
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 20px; }
+  .flecha-arriba li {
+    list-style-type: none; }
 
 .header {
   grid-area: header; }
 
 /* estilos: barra de navegacion (pisando bootstrap tuve que usar 3 important)*/
 #logo {
-  width: 100px; }
+  width: 100px;
+  margin-left: 60px; }
 
 .nav-link {
-  color: white !important;
+  color: #fff !important;
   font-size: 25px; }
 
 nav a:hover {
@@ -72,11 +71,13 @@ nav a:hover {
   flex-direction: row; }
 
 button .navbar-toggler-icon {
-  background-color: #ffffff;
-  padding: 25px; }
+  background-color: #ebd141;
+  padding: 25px;
+  border-radius: 5px; }
 
 #navbarSupportedContent ul {
-  margin: auto; }
+  margin: auto;
+  align-items: flex-end; }
 
 #carouselExampleCaptions {
   width: 100%; }
@@ -86,13 +87,12 @@ button .navbar-toggler-icon {
   justify-content: space-around;
   flex-direction: row;
   background-color: #000; }
-
-.cuadro-1 a {
-  text-decoration: none;
-  color: #ebd141;
-  text-shadow: 3px 3px 3px #000, 3px 3px 3px #000;
-  font-size: 50px;
-  padding: 0 50px 0  50px; }
+  .cuadro-1 a {
+    text-decoration: none;
+    color: #ebd141;
+    text-shadow: 3px 3px 3px #000, 3px 3px 3px #000;
+    font-size: 50px;
+    padding: 0 50px 0  50px; }
 
 .cuadro-2 {
   display: flex;
@@ -100,48 +100,37 @@ button .navbar-toggler-icon {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 20px; }
-
-.cuadro-2 div {
-  width: 400px;
-  height: 500px;
-  border-radius: 20px;
-  padding: 10px;
-  margin: 5px; }
+  .cuadro-2 div {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center; }
+    .cuadro-2 div a {
+      text-decoration: none;
+      color: #ebd141;
+      font-size: 50px;
+      text-shadow: 3px 3px 3px #000, 3px 3px 3px #000;
+      text-align: center; }
 
 #productos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../recursos/productos/salmon2.jpg);
-  background-size: cover;
-  background-position: center; }
+  background-image: url(../recursos/productos/salmon2.jpg); }
 
 #ofertas {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../recursos/productos/tubosDeCalamar.jpg);
-  background-size: cover;
-  background-position: center; }
+  background-image: url(../recursos/productos/tubosDeCalamar.jpg); }
 
 #recetas {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../recursos/imgs/langostinos.jpg);
-  background-size: cover;
-  background-position: center; }
-
-.cuadro-2 a {
-  text-decoration: none;
-  color: #ebd141;
-  font-size: 50px;
-  text-shadow: 3px 3px 3px #000, 3px 3px 3px #000;
-  text-align: center; }
+  background-image: url(../recursos/imgs/langostinos.jpg); }
 
 @media (max-width: 425px) {
   .cuadro-2 div {
-    width: 300px; } }
+    width: 300px;
+    height: 400px; } }
 
 .main-nosotros span {
   font-weight: bold; }
@@ -184,13 +173,13 @@ button .navbar-toggler-icon {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-  .main-nosotros div {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .main-nosotros p {
-    width: 400px;
-    font-size: 20px; } }
+    .main-nosotros div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .main-nosotros p {
+      width: 400px;
+      font-size: 20px; } }
 
 @media (max-width: 425px) {
   .main-nosotros p {
@@ -203,39 +192,73 @@ button .navbar-toggler-icon {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 40px;
-  padding: 10px;
-  border-radius: 10px; }
+  margin: 5px;
+  padding: 5px; }
   .main-productos section div {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 40px; }
+    padding-top: 20px;
+    margin: 10px; }
+  .main-productos section li {
+    font-size: 30px;
+    list-style-type: none; }
 
-.main-productos ul {
-  list-style-type: square; }
-  .main-productos ul li {
-    font-size: 30px; }
-
-.main-productos img {
-  width: 400px;
-  border-radius: 10px; }
-
-.main-productos__section--sales {
+.main-productos .main-productos__section--sales {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column; }
 
-.img-sales {
+.main-productos .img-sales {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap; }
-  .img-sales img {
+  flex-direction: row; }
+  .main-productos .img-sales img {
     width: 150px;
     margin: 20px; }
-  .img-sales img:hover {
+  .main-productos .img-sales img:hover {
     transform: scale(2);
     border: 2px inset #000; }
+
+img {
+  border-radius: 10px; }
+
+#mariscos img, #rebozados img {
+  width: 600px; }
+
+#pescados img, .verduras img, .frutas img {
+  width: 400px; }
+
+@media (max-width: 1500px) {
+  .main-productos section div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 20px; }
+  .main-productos section li {
+    font-size: 30px;
+    list-style-type: none; }
+  .main-productos section .main-productos__section--sales {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+  .main-productos section .img-sales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row; }
+    .main-productos section .img-sales img {
+      width: 150px;
+      margin: 20px; } }
+
+@media (max-width: 800px) {
+  #mariscos img, #rebozados img {
+    width: 80%; }
+  #pescados img, .verduras img, .frutas img {
+    width: 80%; } }
 
 .main-ofertas img {
   width: 400px;
@@ -314,48 +337,44 @@ button .navbar-toggler-icon {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center; }
-
-.main-contacto div {
-  width: 50%; }
+  .main-contacto div {
+    width: 50%; }
+  .main-contacto form {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+    flex-direction: column; }
+  .main-contacto input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px; }
+  .main-contacto textarea {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 80%;
+    height: 90px; }
 
 #foto-contacto {
   width: 100%;
   padding: 10px; }
-
-form {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: stretch;
-  flex-direction: column;
-  margin: 5px; }
-
-input {
-  width: 60%;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px; }
-
-textarea {
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  width: 60%;
-  height: 90px; }
 
 @media (max-width: 1200px) {
   .main-contacto {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: center; } }
+    align-content: center; }
+    .main-contacto div {
+      width: 80%; } }
 
 .footer {
   grid-area: footer;
   background-color: #000000; }
-
-.footer img {
-  width: 80px; }
+  .footer img {
+    width: 80px; }
 
 .redes {
   list-style-type: none;
@@ -363,13 +382,11 @@ textarea {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
-
-.redes li {
-  margin: 10px; }
-
-.redes a {
-  color: #ffffff;
-  font-size: 1.5rem; }
+  .redes li {
+    margin: 10px; }
+  .redes a {
+    color: #ffffff;
+    font-size: 1.5rem; }
 
 .footer__barra-contacto {
   display: flex;
@@ -379,17 +396,16 @@ textarea {
   align-items: center;
   color: #ffffff;
   margin: 0px 30px; }
+  .footer__barra-contacto ul {
+    margin-bottom: 0;
+    padding-left: 0; }
+  .footer__barra-contacto a {
+    text-align: center; }
 
-.footer__barra-contacto ul {
-  margin-bottom: 0;
-  padding-left: 0; }
-
-.footer a {
-  text-align: center; }
-
-@media (max-width: 425px) {
+@media (max-width: 640px) {
   .footer__barra-contacto {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
   .footer img {
     width: 70px; } }

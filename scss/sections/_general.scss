@@ -34,11 +34,10 @@ main{ grid-area:main;}
 
 .flecha-arriba{
     display: flex;
-    justify-content:flex-end ;
-}
-.flecha-arriba {
+    justify-content:flex-end;
     a{  color:$white;
         font-size: 2rem;
         margin-right: 20px;}
-    li{  list-style-type: none;}
+    li{  list-style-type: none;
+    }
 }

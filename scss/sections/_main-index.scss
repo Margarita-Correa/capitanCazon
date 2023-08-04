@@ -7,16 +7,14 @@
     justify-content: space-around;
     flex-direction: row;
     background-color: $black;
+    a{
+        text-decoration: none;
+        color:$dorado;
+        text-shadow:3px 3px 3px $black, 3px 3px 3px $black;
+        font-size: 50px;
+        padding: 0 50px 0  50px;
+    }
 }
-
-.cuadro-1 a{
-    text-decoration: none;
-    color:$dorado;
-    text-shadow:3px 3px 3px $black, 3px 3px 3px $black;
-    font-size: 50px;
-    padding: 0 50px 0  50px;
-}
-
 
 .cuadro-2{
     display:flex;
@@ -24,55 +22,41 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin:20px;
-
-}
-
-.cuadro-2 {
-    div{
-    width:400px ;
-    height: 500px;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 5px;
-    }
+        div {
+        width:400px ;
+        height: 500px;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+            a{
+                text-decoration: none;
+                color: $dorado;
+                font-size: 50px;
+                text-shadow:3px 3px 3px $black, 3px 3px 3px $black;
+                text-align: center;
+            }
+        }
 }
 
 #productos{
-   display: flex;
-   align-items: center;
-   justify-content: center;
    background-image: url(../recursos/productos/salmon2.jpg);
-   background-size: cover;
-   background-position: center;
 }
 #ofertas{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-image: url(../recursos/productos/tubosDeCalamar.jpg);
-    background-size: cover;
-    background-position: center;
 }
 #recetas{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-image: url(../recursos/imgs/langostinos.jpg);
-    background-size: cover;
-    background-position: center;
 }
-.cuadro-2 a{
-    text-decoration: none;
-    color: $dorado;
-    font-size: 50px;
-    text-shadow:3px 3px 3px $black, 3px 3px 3px $black;
-    text-align: center;
-}
-
 
 // media queries
 @media (max-width:425px){
     .cuadro-2 div{
-        width:300px;
+        width: 300px;
+        height:400px;
     }
 }

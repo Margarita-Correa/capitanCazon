@@ -41,7 +41,10 @@ main {
 
 .flecha-arriba {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 80px;
+  right: 0; }
   .flecha-arriba a {
     color: #fff;
     font-size: 2rem;
@@ -55,7 +58,7 @@ main {
 /* estilos: barra de navegacion (pisando bootstrap tuve que usar 3 important)*/
 #logo {
   width: 100px;
-  margin-left: 60px; }
+  margin-left: 30px; }
 
 .nav-link {
   color: #fff !important;
@@ -222,7 +225,7 @@ button .navbar-toggler-icon {
     transform: scale(2);
     border: 2px inset #000; }
 
-img {
+.main-productos img {
   border-radius: 10px; }
 
 #mariscos img, #rebozados img {
@@ -272,19 +275,35 @@ img {
 .main-ofertas #promos {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  margin-bottom: 50px; }
+  margin: 10px; }
+  .main-ofertas #promos h3 {
+    width: 600px;
+    text-align: center; }
 
 .main-ofertas #nuevo {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   align-items: center; }
 
+.main-ofertas .nuevo {
+  background-color: #ebd141;
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
+  margin: auto; }
+
+.main-ofertas h2 .nuevo {
+  width: 600px; }
+
 .main-ofertas p {
-  text-align: center;
-  font-size: 30px; }
+  text-align: start;
+  font-size: 30px;
+  padding: 15px; }
 
 .main-ofertas__section--promosmix {
   display: flex;
@@ -305,12 +324,29 @@ img {
   align-items: flex-start; }
   .tipos-de-promo div {
     margin: 15px; }
+    .tipos-de-promo div li {
+      font-size: 25px; }
 
-.main-recetas section {
-  margin: 30px; }
+.main-ofertas__section--promos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around; }
+
+@media (max-width: 800px) {
+  .main-ofertas img {
+    width: 300px;
+    margin: 5px;
+    border-radius: 10px; }
+  .main-ofertas #promos h3 {
+    width: 300px;
+    text-align: center; }
+  .main-ofertas h2 .nuevo {
+    width: 300px; } }
 
 .main-recetas img {
-  width: 500px;
+  margin: 20px;
+  width: 450px;
   border-radius: 10px; }
 
 .receta1, .receta2 {
@@ -328,9 +364,20 @@ img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  margin: 5px 0 10px 0; }
   .video-recetas iframe {
-    width: 400px; }
+    width: 450px; }
+
+@media (max-width: 900px) {
+  .main-recetas img {
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px; }
+  .video-recetas {
+    margin: 5px 0 10px 0; }
+    .video-recetas iframe {
+      width: 300px; } }
 
 .main-contacto {
   display: flex;

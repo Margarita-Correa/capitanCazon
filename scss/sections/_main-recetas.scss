@@ -1,11 +1,7 @@
-.main-recetas {
-    section{
-        margin: 30px;
-    }
-    img{
-        width:500px;
+.main-recetas img{
+        margin: 20px;
+        width:450px;
         border-radius: 10px;
-    }
 }
 
 .receta1, .receta2{
@@ -26,9 +22,23 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    margin: 5px 0 10px 0;
      iframe{
-        width:400px;
+        width:450px;
     }
 }
-
-
+@media(max-width:900px){
+    .main-recetas {
+        img{
+            margin: 10px;
+            width:300px;
+            border-radius: 10px;
+        }
+    }
+    .video-recetas{
+        margin: 5px 0 10px 0;
+         iframe{
+            width:300px;
+        }
+    }
+}

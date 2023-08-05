@@ -33,7 +33,9 @@ h5 {
 .grilla {
   display: grid;
   grid-template-rows: 0.5fr 5fr 0.5fr;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header"
+ "main"
+ "footer";
   height: 100vh; }
 
 main {
